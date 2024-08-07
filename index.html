@@ -2,12 +2,107 @@
 <html lang="en">
 
 <head>
+
+    <link rel="icon" href="images/Wellspring Logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wellspring</title>
+
+    <link rel="stylesheet" href="Styles.css/styles.css">
+    <link rel="stylesheet" href="Styles.css/navBar.css">
+    <link rel="stylesheet" href="Styles.css/home.css">
+
 </head>
 
 <body>
+
+    <div id="navBar">
+
+        <div id="mobileNavBar">
+            <div id="openMenu" onclick="displayMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <img id="navBarLogoMobile" src="images/Wellspring Logo.png" alt="">
+
+        </div>
+
+        <div id="navbuttons">
+
+            <div id="openMenu" onclick="hideMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div id="HomeButton" class="buttonWrapper">
+                <h1 class="navButtonHeadings">Home</h1>
+            </div>
+            <div class="buttonWrapper">
+                <h1 class="navButtonHeadings">Animals</h1>
+            </div>
+            <div class="buttonWrapper">
+                <h1 class="navButtonHeadings">Our Story</h1>
+            </div>
+            <div id="logoDivBar"><img id="navBarLogo" src="images/Wellspring Logo.png" alt=""></div>
+            <div class="buttonWrapper">
+                <h1 class="navButtonHeadings">Come Stay</h1>
+            </div>
+            <div class="buttonWrapper">
+                <h1 class="navButtonHeadings">Products</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Home" class="pagepadding">
+        <div class="row">
+            <div class="contanier column">
+                <div class="block50" id="VisitUs">
+                    <div class="contanier homeBox">
+                        <h2 class="homelinks">Come Stay</h2>
+                        <div class="contanier column" style="width: 30%; padding-right: 5vw;">
+                            <h3 id="comeStayText"> Two families, the Robinsons and the
+                                Andersons, have
+                                partnered together, seeking to
+                                create a
+                                god-honouring place. A farm where people and relationships are strengthened and
+                                restored.
+                            </h3>
+                            <div id="learnMoreButton">
+                                <h3 id="learnMoreText">Learn more</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block50" id="Food">
+                    <div class="contanier homeBox">
+                        <h2 class="homelinks">Products</h2>
+
+                    </div>
+                </div>
+
+                <div class="block50" id="ourStory">
+                    <div class="contanier homeBox">
+                        <h2 class="homelinks">Our Story</h2>
+                        <h3 id="ourStoryText"> Two families, the Robinsons and the
+                            Andersons, have
+                            partnered together, seeking to
+                            create a
+                            god-honouring place. A farm where people and relationships are strengthened and restored. A
+                            farm
+                            where wholesome food is produced, healing both people’s bodies and the land.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 

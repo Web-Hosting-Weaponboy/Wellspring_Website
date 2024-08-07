@@ -1,0 +1,274 @@
+#Home {
+    height: fit-content;
+    /* background-color: rgba(134, 160, 117, 0.8); */
+}
+
+#ourStory {
+    position: relative;
+    overflow: hidden;
+}
+
+#VisitUs {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1vw;
+}
+
+#Food {
+    position: relative;
+    overflow: hidden;
+}
+
+#ourStory::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: url('../images/couples.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 30;
+}
+
+#ourStory::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 55%, rgb(140, 155, 136) 60%);
+    z-index: 35;
+}
+
+#VisitUs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: url('../images/Cottage\ pear\ \ square.JPG') no-repeat center center;
+    background-size: cover;
+    z-index: 30;
+}
+
+#VisitUs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 55%, rgb(140, 155, 136) 60%);
+    z-index: 35;
+}
+
+#Food::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background: url('../images/IMG-20240210-WA0004.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 30;
+}
+
+#Food::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(140, 155, 136) 40%, transparent 55%);
+    z-index: 35;
+}
+
+.block50 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 24vw;
+    margin-bottom: 4vw;
+    background-color: black;
+    border-radius: 1.5vw;
+}
+
+.homelinks {
+    position: relative;
+    font-size: 6vw;
+    padding-top: 0;
+    padding-right: 2vw;
+    margin: 0%;
+    margin-top: 8vw;
+    margin-left: 3vw;
+    width: fit-content;
+    padding-left: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.6vw 0.6vw 0.2vw rgb(0, 0, 0);
+    z-index: 95;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2vw;
+    height: fit-content;
+    padding-bottom: 0.4vw;
+}
+
+#ourStoryText {
+    z-index: 90;
+    position: relative;
+    width: 30%;
+    padding-right: 5vw;
+    font-size: 1.7vw;
+}
+
+#comeStayText {
+    z-index: 90;
+    position: relative;
+    width: 100%;
+    padding-right: 5vw;
+    font-size: 1.7vw;
+}
+
+#learnMoreButton {
+    width: 100%;
+    height: 4vw;
+    background-color: white;
+    border-radius: 0.6vw;
+    z-index: 98;
+    text-align: center;
+    padding-bottom: 0.2vw;
+    user-select: none;
+    transition: background-position 0.3s;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(71, 87, 67) 50%);
+}
+
+#learnMoreButton:hover {
+    background-position: -100% 0;
+}
+
+@media(max-width: 600px) {
+    #Food::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url('../images/couples.jpg') no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        z-index: 30;
+    }
+
+    #Food::after {
+        content: '';
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 100%;
+        height: 60%;
+        background: rgb(140, 155, 136);
+        clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 35;
+    }
+
+    #ourStory::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url('../images/couples.jpg') no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        z-index: 30;
+    }
+
+    #ourStory::after {
+        content: '';
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 100%;
+        height: 60%;
+        background: rgb(140, 155, 136);
+        clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 35;
+    }
+
+    #VisitUs::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url('../images/Cottage\ pear\ \ square.JPG') no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        z-index: 30;
+    }
+
+    #VisitUs::after {
+        content: '';
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 100%;
+        height: 60%;
+        background: rgb(140, 155, 136);
+        clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 35;
+    }
+
+    .block50 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70vw;
+        margin-bottom: 6vw;
+        background-color: black;
+        border-radius: 1.5vw;
+    }
+
+    .homelinks {
+        position: relative;
+        font-size: 10vw;
+        padding-top: 0;
+        padding-left: 2vw;
+        margin: 0%;
+        margin-top: 8vw;
+        margin-left: 3vw;
+        width: 60%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 0.6vw 0.6vw 0.2vw rgb(0, 0, 0);
+        z-index: 95;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 2vw;
+        height: fit-content;
+        padding-bottom: 0.4vw;
+    }
+
+    #ourStoryText {
+        z-index: 90;
+        position: relative;
+        width: 85%;
+        padding-left: 5vw;
+        padding-top: 13vw;
+        font-size: 3.5vw;
+        text-shadow: 0.2vw 0.2vw 0.1vw rgb(255, 255, 255);
+    }
+
+    .homeBox {
+        flex-direction: column;
+    }
+
+}
