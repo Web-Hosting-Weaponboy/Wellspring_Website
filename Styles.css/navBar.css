@@ -63,6 +63,7 @@
     position: fixed;
     display: none;
     width: 100%;
+    background-color: white;
     height: 17vw;
 }
 
